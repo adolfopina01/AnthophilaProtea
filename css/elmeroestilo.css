@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'typeWritter';
+    src: url('/fonts/atwriter.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'another_typewriterregular';
+    src: url('/fonts/atwriter-webfont.woff2') format('woff2'),
+         url('/fonts/atwriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+header {
+
+    font-family:'typeWritter', serif; 
+
+}
+header a {
+
+    font-family:'typeWritter', serif; 
+    
+}
+
+
+main p {
+
+    font-family:'typeWritter', serif;
+    font-weight: bold;
+    color:black; 
+    background-color: rgba(255, 255, 255, 0);
+}
+
+main h1{
+
+    font-family:'typeWritter', serif;
+    font-weight: bold;
+    color:black; 
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.carousel-item{
+
+    background-color: rgba(255, 255, 255, .5);
+}
+
