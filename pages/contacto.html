@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="es">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 <head>
 
     <meta charset="utf-8">
@@ -10,16 +8,17 @@
     <meta name="description" content="Esta es una página para venta de flores, arreglos florales, arte en flores, bodas, eventos, banquetes, fiestas, eventos religiosos">
     <meta name="author" content="Adolfo Pina Gonzalez y quien diseño los assets, plantillas y Bootstrap contributors">
     <link rel="icon" type="image/x-icon" href="../img/apLogoico.ico">
-
+    
     <title>Anthøphila Protea</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/elmeroestilo.css" rel="stylesheet">
+
 </head>
 <body id="body">
     <!--- INICIA HEADER -->
 
     <header id="header">
-        <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md sticky-top border-bottom">
             <div class="container">
               <a class="navbar-brand d-md-none" href="#">
                 <img class="navLogo" width="38" height="38" src="../img/apLogo02.png" alt="">
@@ -61,7 +60,47 @@
     <!--- INICIA MAIN -->
     <main id="main">
 
+<!--- FORMULARIO INICIA -->
 
+
+
+  <section class="form_wrap">
+
+      <section class="cantact_info">
+          <section class="info_title">
+              <span class="fa fa-user-circle"></span>
+              <h2>INFORMACION<br>DE CONTACTO</h2>
+          </section>
+          <section class="info_items">
+              <p><span class="fa fa-envelope"></span> antophilaprotea@gmail.com</p>
+              <p><span class="fa fa-mobile"></span> +52 55 123 456 78</p>
+          </section>
+      </section>
+
+      <form action="" class="form_contact">
+          <h2>Envia un mensaje</h2>
+          <div class="user_info">
+              <label for="names">Nombres *</label>
+              <input type="text" id="names">
+
+              <label for="phone">Telefono / Celular</label>
+              <input type="text" id="phone">
+
+              <label for="email">Correo electronico *</label>
+              <input type="text" id="email">
+
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje"></textarea>
+
+              <input type="button" value="Enviar Mensaje" id="btnSend">
+          </div>
+      </form>
+
+  </section>
+
+
+
+<!--- FORMULARIO TERMINA -->
 
 
     </main>

@@ -1,48 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+:focus {
+  outline: none;
+}
+
 @font-face {
-    font-family: 'typeWritter';
-    src: url('/fonts/atwriter.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
-
-  @font-face {
-    font-family: 'another_typewriterregular';
-    src: url('/fonts/atwriter-webfont.woff2') format('woff2'),
-         url('/fonts/atwriter-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "typeWritter";
+  src: url("/fonts/atwriter.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "another_typewriterregular";
+  src: url("/fonts/atwriter-webfont.woff2") format("woff2"), url("/fonts/atwriter-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 header {
-
-    font-family:'typeWritter', serif; 
-
+  font-family: "typeWritter", serif;
+  background-color: rgba(255, 255, 255, 0.5) !important;
 }
+
 header a {
-
-    font-family:'typeWritter', serif; 
-    
+  font-family: "typeWritter", serif;
 }
-
 
 main p {
-
-    font-family:'typeWritter', serif;
-    font-weight: bold;
-    color:black; 
-    background-color: rgba(255, 255, 255, 0);
+  font-family: "typeWritter", serif;
+  font-weight: bold;
+  color: black;
+  font-size: 1.125rem;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-main h1{
-
-    font-family:'typeWritter', serif;
-    font-weight: bold;
-    color:black; 
-    background-color: rgba(255, 255, 255, 0);
+main h1 {
+  font-family: "typeWritter", serif;
+  font-weight: bold;
+  color: white;
+  font-size: xx-large;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.carousel-item{
-
-    background-color: rgba(255, 255, 255, .5);
+.carousel-item {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
+.bd-placeholder-img {
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.carousel-caption h1 {
+  color: white !important;
+  font-size: 50px;
+  text-shadow: #000000 1px 0 10px;
+}
+
+.carousel-caption h1 {
+  color: white !important;
+  font-size: 50px;
+  text-shadow: #000000 1px 0 5px;
+}
+
+.carousel-caption p {
+  color: white !important;
+  font-size: 20px;
+  text-shadow: #000000 1px 0 5px;
+}
+
+/* arte arte arte arte arte arte arte arte arte arte arte arte arte arte arte arte arte arte arte arte arte */
+.cover-container {
+  max-width: 42em;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+/* INICIA GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos */
+.row {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+}
+
+.row img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery ul li {
+  float: left;
+  margin: 0 0.8771929825%;
+  overflow: hidden;
+}
+
+.gallery {
+  padding: 40px 0 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery ul {
+  padding-top: 50px;
+  position: relative;
+}
+
+.gallery ul li {
+  margin-bottom: 20px;
+  width: 23.2456140351%;
+  position: relative;
+}
+
+.gallery ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.gallery ul li a:before {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 40%;
+  left: 50%;
+  margin: -14px 0 0 -16px;
+  background-image: url("../img/logoPeque.png");
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.gallery ul li a:hover:before {
+  top: 50%;
+  opacity: 1;
+}
+
+.gallery ul li a:after {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.gallery ul li a:hover:after {
+  opacity: 1;
+}
+
+.port {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  background: #ffffff;
+  background-color: #fafafa;
+  z-index: 103;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  border-bottom: 1px solid #d0d0d0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.port img {
+  width: 50%;
+}
+
+.port .description {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  padding: 0 40px 40px;
+  overflow: auto;
+}
+
+.port h1 {
+  font-size: 35px;
+  line-height: 2.3;
+  padding: 0;
+}
+
+.port > * {
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.port.item_open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.port > * {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.close {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/cerrarTache21x21.png");
+  position: absolute;
+  right: 10px;
+  top: -121px;
+  opacity: 1;
+  z-index: 1004;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.item_open .close {
+  opacity: 1;
+  top: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* TERMINA GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos GALERIA eventos */
+#footer {
+  font-family: serif;
+}
+
+/* contacto contacto contacto contacto contacto contacto contacto contacto contacto contacto contacto contacto  */
+/* FORMULARIO =================================== */
+.form_wrap {
+  width: 1050px;
+  height: 530px;
+  margin: 50px auto;
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Informacion de Contacto*/
+.cantact_info::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(115, 111, 85, 0.7);
+  opacity: 0.9;
+}
+
+.cantact_info {
+  width: 38%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../fondo.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.info_title,
+.info_items {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.info_title {
+  margin-bottom: 60px;
+}
+
+.info_title span {
+  font-size: 100px;
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.info_title h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.info_items p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span {
+  font-size: 50px;
+  margin-right: 15px;
+  margin-left: 4px;
+}
+
+/* Formulario de contacto*/
+form.form_contact {
+  width: 62%;
+  padding: 30px 40px;
+}
+
+form.form_contact h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #303030;
+  margin-bottom: 30px;
+}
+
+form.form_contact .user_info {
+  display: flex;
+  flex-direction: column;
+}
+
+form.form_contact label {
+  font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea {
+  width: 100%;
+  padding: 8px 0px 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #D1D1D1;
+  font-family: "Open sans";
+  color: #5A5A5A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form.form_contact textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 90px;
+}
+
+form.form_contact input[type=button] {
+  width: 180px;
+  background: rgba(115, 111, 85, 0.7);
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  align-self: flex-end;
+  color: #fff;
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form.form_contact input[type=button]:hover {
+  background: rgba(68, 66, 51, 0.7);
+}
+
+/* Ventana de errores*/
+.modal_wrap {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensaje_modal {
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3 {
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mensaje_modal h3:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #C5C5C5;
+  margin: 10px 0px 15px;
+}
+
+.mensaje_modal p {
+  font-size: 16px;
+  color: #606060;
+}
+
+.mensaje_modal p:before {
+  content: "\f00d";
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #E25151;
+  margin-right: 8px;
+}
+
+#btnClose {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-top: 10px;
+  background: #E25151;
+  color: #fff;
+  border: 2px solid #B14141;
+  cursor: pointer;
+  float: right;
+}
+
+/*# sourceMappingURL=elmeroestilo.css.map */
