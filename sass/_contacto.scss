@@ -41,7 +41,6 @@
       align-items: center;
       justify-content: center;
   
-      background-image: url('../fondo.jpg');
       background-size: cover;
       background-position: center center;
   
@@ -219,3 +218,95 @@
       float: right;
   }
   
+/*---------------------------------- 480 480 480 -----------------------------------------*/
+  @media (max-width: 480px) {
+
+    .form_wrap{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 50px auto;
+
+}
+
+    .cantact_info{
+        width: 100%;
+
+}
+form.form_contact{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+
+    
+  
+  }
+
+  /*---------------------------------- 481 481 481 - 768 768 768 -----------------------------------------*/
+  @media (min-width: 481px) and (max-width: 768px) {
+
+    .form_wrap{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+}
+
+    .cantact_info{
+        width: 100%;
+
+}
+
+form.form_contact{
+    width: 100%;
+    padding: 30px 30px;
+}
+  
+  }
+
+  /*----------------------------------769 769 769 - 1024 1024 1024 -----------------------------------------*/
+  @media (min-width: 769px) and (max-width: 1024px) {
+
+    .form_wrap{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+}
+.cantact_info{
+    width: 100%;
+
+}
+form.form_contact{
+    width: 100%;
+    padding: 40px 40px;
+}
+
+   /*---------------------------------- 1025 1025 1025 - 1200 1200 1200 -----------------------------------------*/
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+
+    .form_wrap{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+}
+
+.cantact_info{
+    width: 100%;
+    
+}
+form.form_contact{
+    width: 100%;
+    padding: 50px 50px;
+}
+   
+  }
